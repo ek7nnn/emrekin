@@ -30,3 +30,7 @@ body {
   text-align: center;
   color: #ad1457;
 }
+img {
+  width: 150px;
+  height: auto;
+}
