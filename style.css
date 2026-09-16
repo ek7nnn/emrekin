@@ -1,36 +1,93 @@
 body {
-  background-color: #fce4ec;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Courier New', monospace;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', monospace;
 }
 
 .window {
-  width: 350px;
-  background: #fff0f3;
-  border: 3px solid #d81b60;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(216, 27, 96, 0.2);
+    width: 350px;
+    background: #fff0f3;
+    border: 3px solid #d81b60;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(216, 27, 96, 0.2);
+    overflow: hidden;
 }
 
 .titlebar {
-  background: #d81b60;
-  color: white;
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
+    background: #d81b60;
+    color: white;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.buttons span {
+    width: 10px;
+    height: 10px;
+    background: #ff80ab;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .content {
-  padding: 20px;
-  text-align: center;
-  color: #ad1457;
+    padding: 25px;
+    text-align: center;
+    color: #ad1457;
 }
-img {
-  width: 150px;
-  height: auto;
+
+.content h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Kedi görselinin boyutu */
+#cat {
+    width: 140px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.content p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.action-buttons {
+    margin-top: 15px;
+    position: relative;
+    height: 40px;
+}
+
+#yesBtn {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: 0.2s;
+}
+
+#yesBtn:hover {
+    background-color: #ad1457;
+}
+
+/* Kaçan buton (No butonu) */
+#noBtn {
+    cursor: pointer;
+    transition: transform 0.1s ease;
 }
