@@ -1,0 +1,32 @@
+body {
+  background-color: #fce4ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+}
+
+.window {
+  width: 350px;
+  background: #fff0f3;
+  border: 3px solid #d81b60;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(216, 27, 96, 0.2);
+}
+
+.titlebar {
+  background: #d81b60;
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  color: #ad1457;
+}
