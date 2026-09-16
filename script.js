@@ -1,6 +1,14 @@
 const noBtn = document.getElementById('noBtn');
 const yesBtn = document.getElementById('yesBtn');
 const mainTitle = document.getElementById('mainTitle');
+const bgMusic = document.getElementById('bgMusic');
+
+// Kullanıcı sayfada herhangi bir yere tıkladığı an müzik çalmaya başlar
+document.addEventListener('click', () => {
+    if (bgMusic.paused) {
+        bgMusic.play().catch(e => console.log("Müzik çalınamadı:", e));
+    }
+}, { once: true }); // Sadece ilk tıklamada çalışır
 
 // "Hayır" butonuna fare yaklaşınca kaçması
 function moveNoButton() {
@@ -14,6 +22,6 @@ noBtn.addEventListener('click', moveNoButton);
 
 // "Evet" butonuna basılınca yazının değişmesi
 yesBtn.addEventListener('click', () => {
-    mainTitle.textContent = 'Yeessss! Seni Çok Seviyorum! ❤️';
-    noBtn.style.display = 'none'; // Hayır butonunu gizle
+    mainTitle.textContent = 'Yeeyyy! Seni Çok Seviyorum! ❤️';
+    noBtn.style.display = 'none';
 });
